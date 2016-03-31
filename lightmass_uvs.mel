@@ -1,0 +1,10 @@
+/*	written by Emily Pollacchi
+  	file name remove_texture_filters
+  	Copyright (C) 2016 by Emily Pollacchi
+  	epollacchi@gmail.com
+*/
+
+polyUVSet -copy -uvSet "map1" -nuv "Lightmass";
+polyUVSet -currentUVSet -uvSet "Lightmass";
+performPolyLayoutUV 0;
+delete -ch;
